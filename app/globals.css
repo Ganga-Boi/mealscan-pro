@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: #F4EFFF; color: #1A1829; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+* { -webkit-tap-highlight-color: transparent; }
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+@layer utilities {
+  .card     { @apply bg-white rounded-2xl border border-border shadow-sm; }
+  .btn-pri  { @apply bg-primary text-white font-bold rounded-2xl py-4 text-center active:opacity-80 transition-opacity; }
+  .btn-sec  { @apply bg-muted text-txtpri font-semibold rounded-2xl py-4 text-center border border-border active:opacity-70; }
+  .btn-acc  { @apply bg-accent text-white font-bold rounded-2xl py-4 text-center active:opacity-80 transition-opacity; }
+  .label    { @apply text-xs font-bold text-txtsec uppercase tracking-wide; }
+}
